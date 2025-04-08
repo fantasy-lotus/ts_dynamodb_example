@@ -1,0 +1,28 @@
+{
+  "name": "ts_dynamodb_example",
+  "version": "1.0.0",
+  "description": "This project contains source code and supporting files for a serverless application that you can deploy with the SAM CLI. It includes the following files and folders.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fantasy-lotus/ts_dynamodb_example.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/fantasy-lotus/ts_dynamodb_example/issues"
+  },
+  "homepage": "https://github.com/fantasy-lotus/ts_dynamodb_example#readme",
+  "devDependencies": {
+    "@types/aws-lambda": "^8.10.148",
+    "esbuild": "^0.25.2",
+    "typescript": "^5.8.3"
+  },
+  "dependencies": {
+    "aws-sdk": "^2.1692.0"
+  }
+}
