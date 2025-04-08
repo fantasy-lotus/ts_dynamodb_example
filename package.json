@@ -4,7 +4,9 @@
   "description": "This project contains source code and supporting files for a serverless application that you can deploy with the SAM CLI. It includes the following files and folders.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "tsc",
+    "start": "sam local start-api",
+    "test": "echo \"No test specified\" && exit 0"
   },
   "repository": {
     "type": "git",
@@ -19,10 +21,13 @@
   "homepage": "https://github.com/fantasy-lotus/ts_dynamodb_example#readme",
   "devDependencies": {
     "@types/aws-lambda": "^8.10.148",
+    "@types/node": "^22.14.0",
     "esbuild": "^0.25.2",
     "typescript": "^5.8.3"
   },
   "dependencies": {
+    "@aws-sdk/client-dynamodb": "^3.782.0",
+    "@aws-sdk/lib-dynamodb": "^3.782.0",
     "aws-sdk": "^2.1692.0"
   }
 }
