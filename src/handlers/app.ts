@@ -17,7 +17,7 @@ export const lambdaHandler = async (event: APIGatewayEvent, context: Context) =>
   };
   console.log("写入数据:");
   try {
-    // 使用client创建表
+    //使用client创建表
     // await client.send(new CreateTableCommand({
     //   TableName: "UsersTable",
     //   KeySchema: [
