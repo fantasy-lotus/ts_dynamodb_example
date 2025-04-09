@@ -15,7 +15,6 @@ export const lambdaHandler = async (event: APIGatewayEvent, context: Context) =>
     name: "小鹦鹉 🦜",
     createdAt: new Date().toISOString()
   };
-  console.log("写入数据:");
   try {
     //使用client创建表
     // await client.send(new CreateTableCommand({
@@ -39,11 +38,11 @@ export const lambdaHandler = async (event: APIGatewayEvent, context: Context) =>
       TableName: "UsersTable",
       Key: { userId }
     }));
-    console.log("读取数据:", result.Item);
     if (!result.Item) {
-        console.error("没有找到数据");
+      console.error("没有找到数据");
     }
-
+    console.log("数据写入:", result.Item);
+    
     return {
       statusCode: 200,
       body: JSON.stringify({

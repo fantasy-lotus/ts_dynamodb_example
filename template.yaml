@@ -32,7 +32,14 @@ Resources:
       AttributeDefinitions:
         - AttributeName: userId
           AttributeType: S
+        - AttributeName: age
+          AttributeType: I
       KeySchema:
         - AttributeName: userId
           KeyType: HASH
+        - AttributeName: age
+          KeyType: RANGE
+      ProvisionedThroughput:
+        ReadCapacityUnits: 1
+        WriteCapacityUnits: 1
       BillingMode: PAY_PER_REQUEST

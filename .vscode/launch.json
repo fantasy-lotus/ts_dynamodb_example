@@ -1,0 +1,22 @@
+{
+    "configurations": [
+        {
+            "type": "aws-sam",
+            "request": "direct-invoke",
+            "name": "ts_dynamodb_example:app.lambdaHandler (nodejs22.x)",
+            "invokeTarget": {
+                "target": "code",
+                "projectRoot": "${workspaceFolder}/dist/handlers", // 指向编译后的目录
+                "lambdaHandler": "app.lambdaHandler" // 只需要文件名.函数名
+            },
+            "lambda": {
+                "runtime": "nodejs22.x",
+                "payload": {},
+                "environmentVariables": {
+                    "AWS_SAM_LOCAL": "true" // 添加本地环境标识
+                }
+            },
+            "preLaunchTask": "tsc"
+        }
+    ]
+}

@@ -1,0 +1,24 @@
+{
+    "compilerOptions": {
+        "target": "ES2022",
+        "module": "commonjs",
+        "outDir": "/Users/lotus/workspace/newbie/dynamodb/ts_dynamodb_example/dist",
+        "rootDir": ".",
+        "strict": true,
+        "esModuleInterop": true,
+        "types": [
+            "node",
+            "aws-lambda"
+        ],
+        "sourceRoot": "/Users/lotus/workspace/newbie/dynamodb/ts_dynamodb_example",
+        "typeRoots": [
+            "node_modules/@types"
+        ]
+    },
+    "include": [
+        "src/**/*.ts"
+    ],
+    "exclude": [
+        "node_modules"
+    ]
+}
