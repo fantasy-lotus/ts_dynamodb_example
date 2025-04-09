@@ -39,13 +39,13 @@ ts_dynamodb_example$ sam build
 
 The SAM CLI installs dependencies defined in package.json, compiles TypeScript, creates a deployment package, and saves it in the build folder.
 
-Test a single function by invoking it directly with a test event:
+~~Test a single function by invoking it directly with a test event:~~
 
 ```bash
 ts_dynamodb_example$ sam local invoke HelloWorldFunction --event events/event.json
 ```
 
-The SAM CLI can also emulate your application's API:
+**The SAM CLI can also emulate your application's API:**
 
 ```bash
 ts_dynamodb_example$ sam local start-api
